@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero_Section from '../../components/home_page/hero_sections/Hero_Section'
 
 function HomePage() {
   return (
    <main>
-    <h1>Home Page</h1>
+      <section>
+        <Hero_Section />
+      </section>
    </main>
   )
 }
