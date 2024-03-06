@@ -12,9 +12,6 @@ function Hero_Section() {
 
     }, [])
 
-
-
-
   return (
     <main className='w-full mx-auto h-[500px] bg-slate-100'>
         <div className='max-w-7xl mx-auto h-full  grid grid-cols-2' data-aos="fade-up">

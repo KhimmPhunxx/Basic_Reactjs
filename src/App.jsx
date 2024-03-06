@@ -4,9 +4,9 @@ import { BrowserRouter, Routes , Route} from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import HomePage from './pages/home/HomePage'
 import AboutPage from './pages/about/AboutPage'
+import ContactPage from './pages/contact/ContactPage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
@@ -14,6 +14,7 @@ function App() {
           <Route path='/' element={<Layout />} >
             <Route path='' element={<HomePage />} />
             <Route path='about' element={<AboutPage />} />
+            <Route path='contact' element={<ContactPage />} />
           </Route>
       </Routes>
     </BrowserRouter>
