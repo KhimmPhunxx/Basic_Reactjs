@@ -1,0 +1,22 @@
+{
+    "data_" : [ 
+        {
+            "id" : 1,
+            "name" : "Web Development",
+            "desc" : "This is how we can be sure your brand expands to",
+            "image" : "https://new-project-clone-lpnp.vercel.app/static/media/web-development.f6dcf86dfc8501ba41a0.jpg"
+        },
+        {
+            "id" : 2,
+            "name" : "Web Design",
+            "desc" : "This is how we can be sure your brand expands to",
+            "image" : "https://new-project-clone-lpnp.vercel.app/static/media/web-design.6c398932a4d580bb289e.jpg"
+        },
+        {
+            "id" : 3,
+            "name" : "SEO & Marketing",
+            "desc" : "This is how we can be sure your brand expands to",
+            "image" : "https://new-project-clone-lpnp.vercel.app/static/media/seo-and-marketing.5b44fc464e6f109b6f92.jpg"
+        }
+    ]
+}
