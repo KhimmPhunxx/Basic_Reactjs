@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-
 import Count from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 
@@ -45,11 +44,6 @@ function Count_Number() {
   return (
     <div>
         
-        <ScrollTrigger onEnter={() => setCountUp(true)}>
-            <div className='text-center'>
-            </div>
-        </ScrollTrigger>
-
         <section className=' w-full bg-white py-10'>
                 <div className='max-w-5xl mx-auto flex'>
                     {
@@ -68,7 +62,6 @@ function Count_Number() {
                         })
                     } 
 
-                    
                     <div className='grid grid-cols-3 max-w-5xl mx-auto'>
                         {
                             data.slice(1 ,4).map((item, index) => {
@@ -78,7 +71,9 @@ function Count_Number() {
                                             {item.icon}
                                         </div>
                                         <div className='text-center space-y-6'>
-                                            <h1 className='text-4xl font-bold text-gray-800'> <Count start={0} end={countUp ? item.number : 0} duration={10} />+</h1>
+                                            <ScrollTrigger onEnter={() => setCountUp(true)}>
+                                                <h1 className='text-4xl font-bold text-gray-800'> <Count start={0} end={countUp ? item.number : 0} duration={20} />+</h1>
+                                            </ScrollTrigger>
                                             <p className='text-lg text-gray-600'>{item.title}</p>
                                         </div>
                                     </div>
